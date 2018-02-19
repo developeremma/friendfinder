@@ -9,9 +9,6 @@
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-  <!-- Chosen -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
 </head>
 
@@ -143,13 +140,12 @@
     <br>
     <br>
 
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+    <button type="submit" class="btn btn-danger btn-lg btn-block" id="submit" style="color:yellow;"><i class="fa fa-check-circle" aria-hidden="true"></i>
      Submit</button>
 
-    <hr>
     <footer class="footer">
-      <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/developeremma/friendfinder">GitHub Repo</a></p>
+      <div class="container" style="color:red;">
+        <p><a href="/api/friends" style="color:red;">API Friends List</a> | <a href="https://github.com/developeremma/friendfinder" style="color:red;">GitHub Repo</a></p>
       </div>
     </footer>
 
@@ -177,22 +173,6 @@
   </div>
 
   <script type="text/javascript">
-    // Chosen CSS
-    var config = {
-      ".chosen-select": {},
-      ".chosen-select-deselect": {
-        allow_single_deselect: true
-      },
-      ".chosen-select-no-single": {
-        disable_search_threshold: 10
-      },
-      ".chosen-select-no-results": {
-        no_results_text: "Oops, nothing found!"
-      },
-      ".chosen-select-width": {
-        width: "auto"
-      }
-    };
 
     for (var selector in config) {
       $(selector).chosen(config[selector]);
